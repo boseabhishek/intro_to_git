@@ -48,7 +48,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         </section>
 
         <section>
-          <h1>Audience</h1>
+          <h2>Audience</h2>
           <img src="images/git-religion.jpg"/>
           <aside class="notes">
             All are welcome, there will be lots of examples
@@ -56,7 +56,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         </section>
 
         <section>
-          <h1>Outline</h1>
+          <h2>Outline</h2>
           <ul>
             <li>What and Why</li>
             <li>Getting started</li>
@@ -67,20 +67,19 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         </section>
 
         <section>
-          <h1>What is Git?</h1>
+          <h2>What is Git?</h2>
           <blockquote>
             Git is a version control system that is used for software development and other version control tasks. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.
           </blockquote>
         </section>
 
         <section>
-          <h1>Why Git?</h1>
-          <p>It's a bit confusing?</p>
-          <img src="images/git_for_svn.gif"/>
+          <h2>Why Git?</h2>
+          <img src="images/git_not_github.png"/>
         </section>
 
         <section>
-          <h1>Why Git?</h1>
+          <h2>Why Git?</h2>
           <ul>
             <li>Distributed</li>
             <li>Cross platform</li>
@@ -91,37 +90,79 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         </section>
 
         <section>
-          <h1>A New Hope</h1>
+          <img src="images/svn-v-git-why-did-svn-lose.png"/>
+          <aside class="notes">
+            At my last project, someone said that the use of Git was the one thing all developers now agree upon. Obviously the team did not agree with this.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Why(not) Git?</h2>
+          <p>It's a bit confusing?</p>
+          <img src="images/git_for_svn.gif"/>
+          <aside class="notes">
+            A lot of this confusion comes from trying to apply your favourite tools and workflows to git. Stay in the command line and learn it properly
+          </aside>
+        </section>
+
+        <section>
+          <h2>A New Hope</h2>
           <p>Some simple first steps</p>
         </section>
 
         <section>
-          <h1>Summary, initialise</h1>
-<pre><code data-trim data-noescape>
+          <h4>Initialise a repository</h4>
+          <pre><code data-trim data-noescape>
 git init
-</code></pre>
-        </section>
-        <section>
-          <h1>Summary, basics</h1>
-<pre><code data-trim data-noescape>
+          </code></pre>
+          <h4>See what's going on</h4>
+          <pre><code data-trim data-noescape>
+git status
+git diff
+git log
+          </code></pre>
+          <h4>Basic revision control</h4>
+          <pre><code data-trim data-noescape>
 git add your.file
 git commit -m "your message" your.file
-</code></pre>
+          </code></pre>
         </section>
 
         <section>
-          <h1>A galaxy far away</h1>
+          <h2>A galaxy far away</h2>
           <p>Dealing with remotes<p>
+          <aside class="notes">
+            We'll now update our project to use a simple file system remote, then on to a hosted solution
+          </aside>
         </section>
 
         <section>
-          <h1></h1>
+          <h4>Add a file system remote</h4>
+          <pre><code data-trim data-noescape>
+git init --bare
+          </code></pre>
+          <h4>Add/Remove a remote</h4>
+          <pre><code data-trim data-noescape>
+git remote -v
+git remote add remote_name remote_location
+git remote remove remote_name remote_location
+          </code></pre>
+          <h4>Fetch, pull, push</h4>
+          <pre><code data-trim data-noescape>
+git fetch remote_name
+git pull remote_name branch_name
+git push remote_name branch_name
+          </code></pre>
+        </section>
+
+        <section>
+          <h2></h2>
         </section>
         <section>
-          <h1></h1>
+          <h2></h2>
         </section>
         <section>
-          <h1></h1>
+          <h2></h2>
         </section>
       </div>
 
