@@ -168,11 +168,32 @@ git push remote_name branch_name
         <section>
           <h2></h2>
         </section>
-        
 
         <section>
           <h4>The Return of the Jedi</h4>
-          <p>Workflows</p>
+          <p>Branches, Forks and Workflows</p>
+        </section>
+
+        <section>
+          <h4>Branching</h4>
+          <pre><code data-trim data-noescape>
+git checkout -b your-new-branch
+git checkout your-existing-branch
+git branch -v
+          </code></pre>
+          <h4>Add/Remove a remote</h4>
+          <pre><code data-trim data-noescape>
+git remote -v
+git remote add remote_name remote_location
+git remote remove remote_name remote_location
+          </code></pre>
+          <h4>Fetch, pull, push</h4>
+          <pre><code data-trim data-noescape>
+git fetch remote_name
+git pull remote_name branch_name
+git push remote_name branch_name
+          </code></pre>
+        </section>
       </div>
 
     </div>
