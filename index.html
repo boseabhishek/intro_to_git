@@ -181,17 +181,13 @@ git checkout -b your-new-branch
 git checkout your-existing-branch
 git branch -v
           </code></pre>
-          <h4>Add/Remove a remote</h4>
+          <h4>View your branches</h4>
           <pre><code data-trim data-noescape>
-git remote -v
-git remote add remote_name remote_location
-git remote remove remote_name remote_location
+git log --graph --decorate --abbrev-commit
           </code></pre>
-          <h4>Fetch, pull, push</h4>
+          <h4>Merge a branch</h4>
           <pre><code data-trim data-noescape>
-git fetch remote_name
-git pull remote_name branch_name
-git push remote_name branch_name
+git merge branch_to_merge
           </code></pre>
         </section>
       </div>
